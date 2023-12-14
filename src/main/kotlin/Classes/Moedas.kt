@@ -1,6 +1,7 @@
 package Classes
 
 open class Moedas {
+
     val sigla: String = ""
     val cotacao: String = ""
     var quant: Double = 0.0
@@ -23,8 +24,6 @@ open class Moedas {
                 valor *= -1.0
             }
             quant -= valor
-        }
-
         }
     }
 }
