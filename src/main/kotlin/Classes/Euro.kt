@@ -1,4 +1,4 @@
 package Classes
 
-class Euro : Moedas() {
-}
+ class Euro : Moedas() {
+ }
