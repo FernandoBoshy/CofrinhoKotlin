@@ -1,9 +1,9 @@
 package Classes
 
-open class Moedas {
+abstract class Moedas(sigla: String,cotacao: Double, quant: Double) {
 
     val sigla: String = ""
-    val cotacao: String = ""
+    open var cotacao: Double = 0.0
     var quant: Double = 0.0
 
     fun atualizarDinheiro(valor: Double){
@@ -25,5 +25,9 @@ open class Moedas {
             }
             quant -= valor
         }
+    }
+
+    fun retornaQuant(){
+
     }
 }
