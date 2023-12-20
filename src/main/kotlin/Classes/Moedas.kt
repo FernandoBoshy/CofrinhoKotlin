@@ -2,8 +2,10 @@ package Classes
 
 abstract class Moedas(sigla: String,cotacao: Double, quant: Double) {
 
-    val sigla: String = ""
-    open var cotacao: Double = 0.0
+    constructor(moedas: Moedas) : this(moedas.sigla, moedas.cotacao, moedas.quant)
+
+    var sigla: String = ""
+    var cotacao: Double = 0.0
     var quant: Double = 0.0
 
     fun atualizarDinheiro(valor: Double){

@@ -12,7 +12,6 @@ val listaMoedas = arrayOf(real, dolar, euro)
 
 fun main(args: Array<String>) {
     var opcaoEscolhida: String
-
     println(listaMoedas[0].cotacao)
     println(listaMoedas[1].cotacao)
     println(listaMoedas[2].cotacao)
@@ -20,6 +19,7 @@ fun main(args: Array<String>) {
     while(true){
         printarcabecalho()
         print("Opção: ")
+
         opcaoEscolhida = readLine() ?: "0"
 
         when (opcaoEscolhida){
