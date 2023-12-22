@@ -1,10 +1,11 @@
 package Classes
 
-class Euro : Moedas(, 6.0, 0.0) {
-    constructor() : super(sigla, cotacao, quant){
+class Euro : Moedas {
+
+    constructor(sigla: String, cotacao: Double, quant: Double) : super(sigla, cotacao, quant){
         this.sigla = sigla
-        this.cotacao = cotacao
-        this.quant = quant
+        this.cotacao = 6.0
+        this.quant = 0.0
     }
 
 }

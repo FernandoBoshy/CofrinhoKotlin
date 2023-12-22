@@ -4,9 +4,9 @@ import Classes.Dolar
 import Classes.Euro
 import Classes.Real
 
-var real: Real = Real()
-var dolar: Dolar = Dolar()
-var euro: Euro = Euro()
+var real: Real = Real("BRL", 1.0, 0.0)
+var dolar: Dolar = Dolar("USD", 5.0, 0.0)
+var euro: Euro = Euro("EUR", 6.0, 0.0)
 var cofrinho: Cofrinho = Cofrinho()
 val listaMoedas = arrayOf(real, dolar, euro)
 
@@ -69,7 +69,9 @@ fun adicionarMoeda(){
 
 fun retornaDouble(valor: String): Double {
     try {
+        println(valor)
         valor.replace(",", ".")
+        println(valor)
         return valor.toDouble()
     } catch(e: NumberFormatException){
         println("Valor inválido. . .")
